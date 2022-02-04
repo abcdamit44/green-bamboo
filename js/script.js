@@ -1,10 +1,13 @@
 $('#navbar').hide()
 $('.ks-banner-content').hide()
 $('.ks-banner-img').hide()
+$('.ks-main-container').hide()
 setTimeout(function() {
     $('#navbar').fadeIn('slow');
     $('.ks-banner-content').fadeIn('slow');
     $('.ks-banner-img').fadeIn('slow');
+    $('.ks-main-container').show()
+
 }, 3000);
 $(document).click(function() {
     $('#navbar').fadeIn('slow');
@@ -22,4 +25,12 @@ addEventListener('scroll', function() {
     } else {
         $('.ks-main').fadeOut('slow')
     }
+
+    if (window.pageYOffset == "0") {
+        $('#navbar').css('background', 'transparent')
+    } else {
+        $('#navbar').css('background', 'rgba(0,0,0,0.5)')
+
+    }
+
 })
