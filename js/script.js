@@ -19,5 +19,7 @@ $('.ks-main').hide()
 addEventListener('scroll', function() {
     if (window.pageYOffset >= "400") {
         $('.ks-main').fadeIn('slow')
+    } else {
+        $('.ks-main').fadeOut('slow')
     }
 })
