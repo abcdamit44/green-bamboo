@@ -38,6 +38,10 @@
     border-radius: 5px;
 }
 
+#ks-video {
+    transition: 300ms ease-in-out;
+}
+
 
 /* Banner END */
 

@@ -7,12 +7,17 @@ setTimeout(function() {
     $('.ks-banner-content').fadeIn('slow');
     $('.ks-banner-img').fadeIn('slow');
     $('.ks-main-container').show()
+    $('.ks-video-banner').css('height', '70vh')
+    $('.ks-main').fadeIn('slow')
 
 }, 3000);
 $(document).click(function() {
     $('#navbar').fadeIn('slow');
     $('.ks-banner-content').fadeIn('slow');
     $('.ks-banner-img').fadeIn('slow');
+    $('.ks-video-banner').css('height', '70vh')
+    $('.ks-main').fadeIn('slow')
+
 })
 
 let main = document.querySelector('.ks-main');
@@ -20,11 +25,11 @@ let main = document.querySelector('.ks-main');
 
 $('.ks-main').hide()
 addEventListener('scroll', function() {
-    if (window.pageYOffset >= "400") {
-        $('.ks-main').fadeIn('slow')
-    } else {
-        $('.ks-main').fadeOut('slow')
-    }
+    // if (window.pageYOffset >= "400") {
+    //     $('.ks-main').fadeIn('slow')
+    // } else {
+    //     $('.ks-main').fadeOut('slow')
+    // }
 
     if (window.pageYOffset == "0") {
         $('#navbar').css('background', 'transparent')
